@@ -43,6 +43,13 @@
             flex: 1;
         }
 
+        .logo {
+            width: 120px;
+            height: auto;
+            margin-bottom: 1rem;
+            animation: fadeIn 1s ease-out;
+        }
+
         .result-header {
             margin-bottom: 2rem;
         }
@@ -172,6 +179,14 @@
             color: var(--text-light);
         }
 
+        .great {
+            color: black;
+        }
+
+        .coder {
+            color: red;
+        }
+
         .developer-credit {
             text-align: center;
             padding: 1.5rem;
@@ -181,7 +196,7 @@
         }
 
         .developer-credit a {
-            color: var(--primary);
+            color: red;
             text-decoration: none;
             font-weight: 600;
         }
@@ -193,6 +208,7 @@
 </head>
 <body>
     <div class="result-container">
+        <img src="images/logo.png" alt="GreatCoder Logo" class="logo">
         <div class="result-header">
             <h1 class="result-title">Your Result</h1>
         </div>
@@ -243,13 +259,13 @@
         </div>
        
         <div class="result-footer">
-            <p>For detailed answers or questions, please contact the GreatCoder technologies LLP.</p>
+            <p>For detailed answers or questions, please contact the <a style="color: black" href="https://www.thegreatcoder.com/index.php" target="_blank">GreatCoder's.</a></p>
             <p><a href="/" style="color: var(--primary);"><i class="fas fa-home"></i> Return to Home</a></p>
         </div>
     </div>
 
     <div class="developer-credit">
-        Developed by <a href="#" target="_blank">GreatCoder</a>
+        Developed by <a href="https://www.instagram.com/greatcoder/" target="_blank"><span class="great">great</span><span class="coder">code</span><span class="great">r</span></a>
     </div>
 
     <script>

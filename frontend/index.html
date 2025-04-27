@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <title>GreatCoder App</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         :root {
             --primary: #6366f1;
@@ -63,13 +65,21 @@
             max-width: 800px;
         }
 
+        .logo {
+            width: 120px;
+            height: auto;
+            margin-bottom: 1rem;
+            animation: fadeIn 1s ease-out;
+        }
+
         .exam-badge {
-            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
-            color: white;
+            background: white;
+            /* background: linear-gradient(135deg, var(--primary), var(--primary-dark)); */
+            color: rgb(5, 5, 5);
             padding: 0.5rem 1.2rem;
             border-radius: 50px;
             display: inline-block;
-            font-size: 0.9rem;
+            font-size: 1.5rem;
             font-weight: 600;
             margin-bottom: 1rem;
             box-shadow: 0 4px 6px rgba(79, 70, 229, 0.15);
@@ -328,6 +338,17 @@
                 align-items: flex-start;
             }
         }
+        .great {
+            color: black;
+        }
+
+        .coder {
+            color: red;
+        }
+        .logo-img {
+            height: 15px;
+            width: auto;
+        }
     </style>
 </head>
 <body>
@@ -338,12 +359,15 @@
     </div>
 
     <div class="container">
+        <!-- <img src="images/logo.png" alt="GreatCoder Logo" class="logo"> -->
         <div class="header">
             <div class="exam-badge">
-                <i class="fas fa-shield-alt"></i> GreatCoder's Mock Exam
+                <i class="logo">
+                    <img src="images/g-logo.png" alt="G Logo" class="logo-img">
+                </i> <span class="great">great</span><span class="coder">code</span><span class="great">r</span> Mock Exam
             </div>
             <h1>DevOps Mock Certification Exam</h1>
-            <p>Validate your expertise with of DevOps learning</p>
+            <p>Validate your expertise with DevOps learning</p>
             
             <div class="exam-features">
                 <div class="feature">
@@ -392,7 +416,7 @@
 
         <div class="footer">
             <i class="fas fa-code-branch"></i>
-            <span>Developed by GreatCoder's</span>
+            <span>Developed by <span class="great">great</span><span class="coder">code</span><span class="great">r</span></span>
         </div>
     </div>
 </body>
